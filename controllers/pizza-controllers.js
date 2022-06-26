@@ -24,7 +24,6 @@ const pizzaController = {
         path: 'comments',
         select: '-__v'
       })
-      .select('-__v')
       .then(dbPizzaData => res.json(dbPizzaData))
       .catch(err => {
         console.log(err);
